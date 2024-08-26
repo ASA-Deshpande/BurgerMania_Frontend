@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(223, 221, 221);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background-image: url('../milkshake.webp'); /* Replace with your burger image URL */
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    /* margin: 0; */
+}
+
+table {
+    /* margin-bottom: 10px; */
+    width: 70%;
+    /* border-collapse: collapse; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 10px 10px;
+    margin-bottom: 10px;
+    
+}
+
+th,
+td {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.burgericon {
+    width: 100px;
+    height: 100px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.parentdiv {
+    display: flex;
+    justify-content: center;
+    /* align-items:end; */
+    margin: 10px;
+
+    font-size: 20px;
+    overflow: auto;
+
+}
+
+tr {
+    box-shadow: 3px 3px 3px 3px gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+
+tr:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.table-responsive{
+    margin: 20px
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .burgericon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    .burgericon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .bottom button {
+        margin-top: 10px;
+    }
+}
+
+.title {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cardforitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px gray; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+    /* text-align: center; */
+    max-width: 768px;
+    font-size: 20px;
+}
+
+.titlebaritems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px gray; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: white;
+    /* text-align: center; */
+    max-width: 768px;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    font-weight: bolder;
+    
+}
+
+.cardforitem div {
+    flex: 1;
+    text-align: center;
+    /* margin: 10px; */
+}
+
+.cardforitem .removeitem {
+    cursor: pointer;
+    /* color: red; */
+    font-size: 18px;
+}
+
+.parentDiv {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.total-summary {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .cardforitem .titlebaritems {
+        flex-direction: column;
+    }
+
+    .cardforitem div .titlebaritems {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/menuNcart.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./landingpage.html">Sabrosa Burgers</a>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./landingpage.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title" style="color: white;">Menu Items</div>
+
+    <div class="parentdiv table-responsive">
+
+        <table>
+            <tbody>
+                <tr id="crispy">
+                    <td>Crispy Supreme</td>
+                    <td><img class="burgericon" src="./images/crispysupreme.jfif" alt="Crispy Supreme burger photo">
+                    </td>
+                    <td><select name="vegornot">
+                            <option value="Veg" selected>Veg</option>
+                            <option value="Egg">Egg</option>
+                            <option value="Chicken">Chicken</option>
+                        </select>
+                    </td>
+                    <td><input type="number" name="qty" placeholder="Qty" max="5" min="1" class="qty"></input></td>
+                    <td><button type="button" class="btn btn-outline-success additem" id="btn1">Add to Cart</button>
+                    </td>
+                    <!-- <td><button type="button" class="btn btn-outline-danger" id="removebtn1">Remove from Cart</button> -->
+                    </td>
+                </tr>
+                <tr id="surprise">
+                    <td>Surprise</td>
+                    <td><img class="burgericon" src="./images/suprise.jfif" alt="Surprise burger photo"></td>
+                    <td>
+                        <select name="vegornot">
+                            <option value="Veg" selected>Veg</option>
+                            <option value="Egg">Egg</option>
+                            <option value="Chicken">Chicken</option>
+                        </select>
+                    </td>
+                    <td><input type="number" name="qty" placeholder="Qty" max="5" min="1" class="qty"></input></td>
+                    <td><button type="button" class="btn btn-outline-success additem" id="btn2">Add to Cart</button>
+                    </td>
+                    <!-- <td><button type="button" class="btn btn-outline-danger" id="removebtn2">Remove from Cart</button> -->
+                    </td>
+                </tr>
+                <tr id="whopper">
+                    <td>Whopper</td>
+                    <td><img class="burgericon" src="./images/whopper.jfif" alt="Whopper burger photo"></td>
+                    <td>
+                        <select name="vegornot">
+                            <option value="Veg" selected>Veg</option>
+                            <option value="Egg">Egg</option>
+                            <option value="Chicken">Chicken</option>
+                        </select>
+                    </td>
+                    <td><input type="number" name="qty" placeholder="Qty" max="5" min="1" class="qty"></input></td>
+                    <td><button type="button" class="btn btn-outline-success additem" id="btn3">Add to Cart</button>
+                    </td>
+                    <!-- <td><button type="button" class="btn btn-outline-danger" id="removebtn3">Remove from Cart</button> -->
+                    </td>
+                </tr>
+                <tr id="chillicheese">
+                    <td>Chilli Cheese</td>
+                    <td><img class="burgericon" src="./images/chillicheese.jfif" alt="Chilli Cheese burger"></td>
+                    <td>
+                        <select name="vegornot">
+                            <option value="Veg" selected>Veg</option>
+                            <option value="Egg">Egg</option>
+                            <option value="Chicken">Chicken</option>
+                        </select>
+                    </td>
+                    <td><input type="number" name="qty" placeholder="Qty" max="5" min="1" class="qty"></input></td>
+                    <td><button type="button" class="btn btn-outline-success additem" id="btn4">Add to Cart</button>
+                    </td>
+                    <!-- <td><button type="button" class="btn btn-outline-danger" id="removebtn4">Remove from Cart</button> -->
+                    </td>
+                </tr>
+                <tr id="tandoori">
+                    <td>Tandoor Grill</td>
+                    <td><img class="burgericon" src="./images/tandoori.jfif" alt="Tandoor Grill burger"></td>
+                    <td>
+                        <select name="vegornot">
+                            <option value="Veg" selected>Veg</option>
+                            <option value="Egg">Egg</option>
+                            <option value="Chicken">Chicken</option>
+                        </select>
+
+                    </td>
+                    <td><input type="number" name="qty" placeholder="Qty" max="5" min="1"
+                            class="qty"></input></td>
+                    <td><button type="button" class="btn btn-outline-success additem" id="btn5">Add to Cart</button>
+                    </td>
+                    <!-- <td><button type="button" class="btn btn-outline-danger" id="removebtn5">Remove from Cart</button> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- <div class="bottom">
+        <a href="./cart.html" >
+        <button type="button" class="btn btn-info btn-lg">View Cart</button>
+        </a>
+    </div> -->
+
+    <br><br>
+
+    <div class="title" style="color: white;">Cart Items</div>
+    <div class="parentDiv" id="parentCartDiv">
+
+        <div id="cardItemsTitle">
+
+            <div class="titlebaritems">
+                <div class="burgername">Burger Name</div>
+                <div class="burgercat">Category</div>
+                <div class="price">Price</div>
+                <div class="quantity">Quantity</div>
+                <div class="totprice">Total Price</div>
+                <div class="removeitem">Remove</div>
+            </div>
+
+            <div id="cardItems"></div>
+        </div>
+        <!-- <div class="cardforitem">
+            <div class="burgername">Crispy Supreme</div>
+            <div class="burgercat">Chicken</div>
+            <div class="price">Rs. 450</div>
+            <div class="quantity">2</div>
+            <div class="totprice">Rs. 900</div>
+            <div class="removeitem">❌</div>
+        </div> -->
+
+
+        <div class="total-summary" id="summary" style="color: white;">Total Quantity is: and Total Price is: </div>
+        <div class="text-center">
+            <button class="btn btn-success" id="placeorderbtn">Place Order</button>
+        </div>
+    </div>
+
+    <script type="module" src="menuNcartscript.js"></script>
+    <!-- <script src="script1.js"></script> -->
+</body>
+
+</html>

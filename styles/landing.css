@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.burgerimg {
+    background-image: url('../images/pexels-valeriya-1251196.jpg');
+    /* background-repeat: no-repeat;
+        /* background-size: auto; */
+    /* background-size: cover; */
+    background-color: #cccccc;
+    height: 620px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* overflow: auto; */
+    object-fit: contain;
+}
+
+h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 60px;
+}
+
+.top {
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.bottom {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+
+}
+
+.textonlybottom {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
